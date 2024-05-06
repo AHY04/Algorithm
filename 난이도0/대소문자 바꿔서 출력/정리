@@ -1,0 +1,14 @@
+answer변수를 String타입으로 선언하고 초기형태를 공백으로 한다
+반복문을 통해 입력받은 문자열의 첫 글자부터 마지막 글자까지 하나씩 대소문자를 판별하고, if문을 통하여 answer변수(공백)에 대소문자를 바꾼 결과를 한글자씩 채워넣는다
+반복문 종료 후 answer의 결과값을 출력한다.
+
+
+-변수명.charAt(index번호) : String 타입으로 선언된 변수, 즉 문자열 중에서 원하는 번호의 한 글자만 선택하여 char타입으로 변환해준다.
+
+-Character.isUpperCase(변수명) : 변수가 대문자인지 확인해준다.
+-Character.toUpperCase(변수명) : 변수를 대문자로 변환한다.
+
+-Character.isLowerCase(변수명) : 변수가 소문자인지 확인해준다.
+-Character.toLowerCase(변수명) : 변수를 소문자로 변환한다.
+
+#문자열 전체를 대문자 또는 소문자로 바꾸고 싶을때는 문자열.toUpperCase() 또는 문자열.toLowerCase()를 사용해주면 된다.
