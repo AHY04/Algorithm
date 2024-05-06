@@ -1,0 +1,7 @@
+주어진 코드에서는 16번째 줄 문장이 clean_storage[num_item] = Integer.toString(num[i]);로 되어있는데, 이대로 코드를 실행시키면 결과값에 물건 이름이 나오지 않고 입력받은 물건 개수중에 가장 큰 숫자가 출력된다.
+그 이유는 Integer.toString(num[i]) 이 코드로 인해 문자열을 정수형태로 바꿨기 때문이다.
+원하는 결과값을 얻기 위해서는 clean_storage에 입력받은 물건 이름, 즉 storage안에 있는 내용이 저장되어야 하기 때문에 clean_storage[num_item] = storage[i]; 이렇게 코드를 수정하였다.
+
+반복문과 if문을 통해 입력받은 물건이 그 전에도 입력받았던 물건인지, 즉 겹치는 물건인지 검사한다.
+겹치지 않으면 그 물건의 이름을 clean_storage에 저장하고, 그 물건의 개수를 clean_num에 저장한다.
+겹치는 물건일 경우 clean_storage에 물건의 이름을 새로 저장하지 않고, 기존에 clean_num에 저장되어 있던 숫자에 추가된 물건의 개수만 더해서 clean_num에 다시 저장한다.
