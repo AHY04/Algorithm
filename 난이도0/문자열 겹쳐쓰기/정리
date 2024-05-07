@@ -1,7 +1,14 @@
+나는 여러번의 반복문을 통해 my_string과 overwrite_string의 글자를 하나씩 집어넣는 방식으로 코드를 짰지만, 다른 사람들은 substring이라는 함수를 통해 쉽고 깔끔하게 구현하였다.
+
+substring : 문자열을 원하는 위치에서 자르고 싶을때 사용하는 함수로, 문자열.substring(숫자) 이와 같은 형태로 사용이 가능하다. 그리고 이는 숫자의 위치에 있는 문자를 포함하여 그 이후에 있는 문자까지 리턴한다는 것을 의미한다.
+            문자열.substring(숫자1, 숫자2) 이런 형태로 사용할 경우 숫자1번째 문자부터 숫자2의 전 위치에 있는 문자까지 리턴한다. 
+
+나의 코드
 첫번째 반복문 : s전까지 my_string의 문자를 answer에 넣는다(my_string의 첫번째 문자부터 s-1번째 문자를 answer에 추가)
 두번째 반복문 : overwrite_string의 문자를 위의 answer에 추가한다(overwrite_string의 첫번째 부터 마지막 문자를 answer의 s번째 부터 overwrite_string.length번째 문자까지에 추가)
 세번째 반복문 : overwrite_string의 문자로 바뀐 이후부터의 남아있는 my_string의 문자를 위의 answer에 추가한다(my_string의 s+overwrite_string.length번째 부터 마지막 문자를 answer의  s+overwrite_string.length번째 부터 마지막 문자까지에 추가)
 
-나는 여러번의 반복문을 통해 my_string과 overwrite_string의 글자를 하나씩 집어넣는 방식으로 코드를 짰지만, 다른 사람들은 substring이라는 함수를 통해 쉽고 깔끔하게 구현하였다.
-
-substring : 문자열을 원하는 위치에서 자르고 싶을때 사용하는 함수로, 문자열.substring(숫자) 이와 같은 형태로 사용이 가능하다. 그리고 이는 숫자의 위치에 있는 문자를 포함하여 그 이후에 있는 문자까지 리턴한다는 것을 의미한다.
+substring활용 코드
+1. before문자열에 my_string의 첫번째 부터 s의 이전 위치에 있는 문자까지 저장한다
+2. after문자열에 overwrite_string의 문자로 바뀐 이후부터의 남아있는 my_string의 문자를 저장한다
+3. before문자열, overwrite_string문자열, after문자열 순서대로 리턴한다
