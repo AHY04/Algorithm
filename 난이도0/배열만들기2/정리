@@ -1,0 +1,9 @@
+1. int [] 로 배열을 만들게 되면 length가 고정이 되기 때문에 동적 length 생성이 가능한 ArrayList로 생성한다.
+2. 문제 설명의 조건과 같이 l<= i <= r의 조건을 갖추는 for문을 만든 뒤, i를 Integer.toString으로 String 타입으로 변환한다. 
+   이유는 5의 배수가 아닌, 0 || 5을 가지고 있는 숫자를 확인해야하기에 String으로 확인을 하고자 했다.
+   boolean 변수를 생성하여, 후에 0이나 5를 포함 여부를 체크한다.
+3. numString의 length()로 각 자리수를 체크하고, numString.charAt(i);를 통해 각 자리수를 체크한다.
+4. 발견 되었을 시 list에 저장 
+5. return하는 객체를 비었다면 -1을 담고, 아니라면 .stream() 메소드를 통해 Integer -> int로 형변환 한 뒤 int[] 타임으로 만들어준다.
+
+stream관련내용 참고자료: https://blog.naver.com/on-a-journey/223131838385
