@@ -1,0 +1,12 @@
+ArrayList 관련 메소드
+-List.size(): ArrayList에 들어있는 객체의 수를 리턴
+
+-List.indexOf(d): 해당 객체의 인덱스를 리턴
+
+-List.contains(d): 해당 객체가 ArrayList에 있는지 확인
+
+-List.isEmpty(): ArrayList가 비어있는지 확인
+
+-List.remove(d): ArrayList에 있는 객체를 ArrayList에서 제거
+
+-List.get(d): 해당 인덱스에 있는 객체를 리턴
