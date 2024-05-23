@@ -1,0 +1,6 @@
+입력받은 숫자들을 배열에 저장하고, 내림차순 정렬하여 과도한 if문 사용을 방지하고자 하였다.
+
+오름차순: Arrays.sort(배열명)
+내림차순: Arrays.sort(배열명, Collections.reverseOrder())
+└내림차순을 하고자 할 때는 배열을 int로 선언하는 것이 아니라 Integer로 선언해야함
+절댓값: Math.abs(변수 또는 상수)
