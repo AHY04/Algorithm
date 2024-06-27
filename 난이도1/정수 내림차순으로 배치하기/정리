@@ -1,0 +1,1 @@
+코드 마지막 줄에 Long.parseLong(answer)를 적어서 string형태인 answer를 long형태로 바꿔 리턴할 수 있게 해준다.
