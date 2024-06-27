@@ -1,1 +1,20 @@
 코드 마지막 줄에 Long.parseLong(answer)를 적어서 string형태인 answer를 long형태로 바꿔 리턴할 수 있게 해준다.
+
+
+
+-다른 풀이
+import java.util.*;
+class Solution {
+  public long solution(long n) {
+        String[] list = String.valueOf(n).split("");
+        Arrays.sort(list);
+ 
+        StringBuilder sb = new StringBuilder();
+        for (String aList : list) sb.append(aList);
+ 
+        return Long.parseLong(sb.reverse().toString());
+  }
+}
+sort 메소드와 StringBuilder를 사용한 풀이이다.
+sort로 배열을 오름차순으로 정렬한 뒤, 반복문과 StringBulder를 이용하여 정렬된 값을 문자열에 담았다.
+마지막으로 reverse메소드를 통해 내림차순으로 정렬해주었다.
