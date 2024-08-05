@@ -1,0 +1,4 @@
+- 결과를 담을 String 타입의 answer 배열과 n번째 인덱스를 담아 오름차순 정렬을 하기 위한 ArrayList를 선언한다.
+- strings의 길이만큼 반복하여 strings[i]의 n번째 글자를 맨 앞에 더하여 list에 담는다.
+- java.util.Collections의 sort 메서드를 통해 list를 오름차순 정렬한다.
+- list의 사이즈만큼 반복하여 substring 메서드를 통해 list의 각 문자열을 1부터 길이까지 부분문자열로 나누어 answer[i]에 담는다.
