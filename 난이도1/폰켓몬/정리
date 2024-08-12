@@ -12,3 +12,7 @@ hashset의 성질
 hashset의 사용법은 arraylist와 동일하다.
 ex) Hashset<String> animals = new Hashset<>();
     animals.add("tiger");
+
+hashset으로 만든 배열을 정렬하고 싶을 때는
+List<String> tempSet = new ArrayList<>(animals);
+이런식으로 hashset을 arraylist로 바꾸어 준 후에 원하는 대로 정렬하여 출력시키면 된다. 
